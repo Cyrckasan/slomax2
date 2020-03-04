@@ -105,7 +105,7 @@ const ToDoComponent = ({ title, todos, addTodo }) => {
             placeholder="Название задачи"
             onChange={e => setTodoText(e.target.value)}
           />
-          <button>Добавить</button>
+          <button disabled={!todoText}>Добавить</button>
         </form>
 
         <ul>

@@ -76,7 +76,7 @@ const addTodo = todo => ({
 const reducer = (state = [], action) => {
   switch (action.type) {
     case ADD_TODO:
-      // state should object should not be edited!!!
+      // state object should not be edited!!!
       return [...new Set([action.payload, ...state])];
     default:
       return state;
